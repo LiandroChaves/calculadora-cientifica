@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Científica</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" readonly />
+        <div class="teclado">
+            <button onclick="limpar()">C</button>
+            <button onclick="apagar()">←</button>
+            <button onclick="adicionarOperador('^')">^</button>
+            <button onclick="adicionarOperador('/')">/</button>
+            
+            <button onclick="adicionarNumero('7')">7</button>
+            <button onclick="adicionarNumero('8')">8</button>
+            <button onclick="adicionarNumero('9')">9</button>
+            <button onclick="adicionarOperador('*')">*</button>
+
+            <button onclick="adicionarNumero('4')">4</button>
+            <button onclick="adicionarNumero('5')">5</button>
+            <button onclick="adicionarNumero('6')">6</button>
+            <button onclick="adicionarOperador('-')">-</button>
+
+            <button onclick="adicionarNumero('1')">1</button>
+            <button onclick="adicionarNumero('2')">2</button>
+            <button onclick="adicionarNumero('3')">3</button>
+            <button onclick="adicionarOperador('+')">+</button>
+
+            <button onclick="adicionarNumero('0')">0</button>
+            <button onclick="adicionarNumero('.')">.</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="adicionarFuncao('sqrt')">√</button>
+            
+            <button onclick="adicionarFuncao('sin')">sin</button>
+            <button onclick="adicionarFuncao('cos')">cos</button>
+            <button onclick="adicionarFuncao('tan')">tan</button>
+            <button onclick="adicionarFuncao('log')">log</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
